@@ -3,114 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rodrigo Gomes do Carmo | Diretor de Fotografia & Fotógrafo</title>
+    <title>Rodrigo Gomes do Carmo | Diretor de Fotografia</title>
     <style>
         * { box-sizing: border-box; }
         body { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; 
-            background-color: #0d0e11; 
-            color: #e4e6eb; 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+            background-color: #0a0b0d; 
+            color: #d1d4db; 
             margin: 0; 
             padding: 0;
+            -webkit-font-smoothing: antialiased;
         }
         .header-banner {
             width: 100%;
-            height: 220px;
-            background: linear-gradient(rgba(0,0,0,0.3), #0d0e11), url('imagens/background-set.jpg') center/cover no-repeat;
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
+            height: 240px;
+            background: linear-gradient(rgba(0,0,0,0.2), #0a0b0d), url('imagens/background-set.jpg') center/cover no-repeat;
         }
         .profile-container {
             text-align: center;
-            margin-top: -60px;
+            margin-top: -70px;
             padding: 0 20px;
         }
         .profile-img {
-            width: 120px;
-            height: 120px;
+            width: 130px;
+            height: 130px;
             border-radius: 50%;
-            border: 4px solid #0d0e11;
+            border: 3px solid #0a0b0d;
             object-fit: cover;
-            background-color: #242526;
+            background-color: #1a1b1f;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
         }
-        h1 { font-size: 24px; color: #ffffff; margin: 15px 0 5px 0; font-weight: 700; }
-        .tagline { font-size: 14px; color: #3f94ee; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 20px 0; }
+        h1 { font-size: 22px; color: #ffffff; margin: 18px 0 6px 0; font-weight: 600; letter-spacing: -0.5px; }
+        .tagline { font-size: 13px; color: #8e929b; font-weight: 500; text-transform: uppercase; letter-spacing: 1.5px; margin: 0 0 25px 0; }
         
-        .content { max-width: 600px; margin: 0 auto; padding: 0 20px 40px 20px; }
+        .content { max-width: 540px; margin: 0 auto; padding: 0 20px 50px 20px; }
         
-        .links-container { margin-bottom: 30px; }
+        /* BOTÕES MAIS FINOS E ELEGANTES */
+        .links-container { margin-bottom: 35px; }
         .btn-link {
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: #1c1e21;
-            color: white;
+            background-color: #141619;
+            color: #e4e6eb;
             text-decoration: none;
-            padding: 14px;
-            margin-bottom: 12px;
-            border-radius: 8px;
-            font-weight: 600;
-            font-size: 15px;
-            border: 1px solid #303338;
-            transition: all 0.2s ease;
+            padding: 11px 16px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 14px;
+            border: 1px solid #262930;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        .btn-link:hover { background-color: #242526; border-color: #3f94ee; }
-        .btn-whatsapp { background-color: #128c7e; border: none; }
-        .btn-whatsapp:hover { background-color: #075e54; }
-        .btn-lattes { background-color: #5d6670; border: none; }
-        .btn-lattes:hover { background-color: #495057; }
-        .btn-youtube { background-color: #cc181e; border: none; }
-        .btn-youtube:hover { background-color: #b31217; }
-
-        h2 { font-size: 18px; color: #ffffff; border-left: 4px solid #3f94ee; padding-left: 10px; margin: 30px 0 15px 0; }
-        p { line-height: 1.6; color: #b0b3b8; font-size: 15px; }
+        .btn-link:hover { 
+            background-color: #1c1f24; 
+            border-color: #525866;
+            color: #ffffff;
+        }
         
-        ul { padding-left: 20px; margin: 0; }
-        li { color: #b0b3b8; font-size: 14px; line-height: 1.6; margin-bottom: 12px; }
-        li strong { color: #ffffff; }
-
-        .gallery {
-            display: block;
+        /* Destaque sutil para o portfólio principal */
+        .btn-primary {
+            background-color: #ffffff;
+            color: #0a0b0d;
+            border: none;
         }
+        .btn-primary:hover {
+            background-color: #e4e6eb;
+            color: #0a0b0d;
+        }
+
+        h2 { font-size: 16px; color: #ffffff; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin: 35px 0 15px 0; padding-bottom: 5px; border-bottom: 1px solid #1c1f24; }
+        p { line-height: 1.6; color: #a3a7b0; font-size: 14.5px; text-align: justify; }
+        
+        ul { padding-left: 15px; margin: 0; }
+        li { color: #a3a7b0; font-size: 14px; line-height: 1.6; margin-bottom: 12px; list-style-type: square; }
+        li strong { color: #ffffff; font-weight: 500; }
+
+        /* GALERIA DE TRABALHOS */
         .gallery-item {
             width: 100%;
-            margin-bottom: 15px;
-            border-radius: 8px;
+            margin-bottom: 20px;
+            border-radius: 6px;
             overflow: hidden;
-            background: #1c1e21;
+            background: #141619;
+            border: 1px solid #1c1f24;
         }
         .gallery-item img {
             width: 100%;
             display: block;
             height: auto;
-            max-height: 300px;
+            max-height: 280px;
             object-fit: cover;
         }
         .gallery-caption {
-            padding: 10px;
+            padding: 12px;
             font-size: 12px;
-            color: #aaa;
+            color: #8e929b;
             text-align: center;
+            border-top: 1px solid #1c1f24;
         }
 
+        /* CARTÃO DE CONTATO MINIMALISTA */
         .contact-info {
-            background-color: #1c1e21;
-            border: 1px solid #303338;
-            border-radius: 8px;
-            padding: 20px;
-            margin-top: 30px;
+            background-color: #141619;
+            border: 1px solid #1c1f24;
+            border-radius: 6px;
+            padding: 18px;
+            margin-top: 15px;
         }
         .contact-item {
             display: flex;
-            align-items: center;
             margin-bottom: 10px;
-            font-size: 14px;
-            color: #b0b3b8;
+            font-size: 13.5px;
+            color: #a3a7b0;
         }
         .contact-item:last-child { margin-bottom: 0; }
-        .contact-item strong { color: #ffffff; margin-right: 8px; width: 90px; display: inline-block; }
-        .contact-item a { color: #3f94ee; text-decoration: none; }
+        .contact-item strong { color: #ffffff; font-weight: 500; width: 85px; display: inline-block; }
+        .contact-item a { color: #5294e2; text-decoration: none; }
         .contact-item a:hover { text-decoration: underline; }
     </style>
 </head>
@@ -125,12 +134,12 @@
     </div>
 
     <div class="content">
-        <!-- BOTÕES DE AÇÃO RÁPIDA -->
+        <!-- NOVA HIERARQUIA DE BOTÕES (MAIS FINOS E FOCADOS NO TRABALHO) -->
         <div class="links-container">
-            <a href="https://wa.me/5561982003575" target="_blank" class="btn-link btn-whatsapp">💬 Fale Comigo no WhatsApp</a>
-            <a href="https://lattes.cnpq.br/1247976809057759" target="_blank" class="btn-link btn-lattes">📝 Currículo Lattes (CNPq)</a>
-            <a href="https://www.youtube.com/watch?v=5Hj75ond7VA" target="_blank" class="btn-link btn-youtube">🎬 Assista: Vídeo UnBTV 20 Anos</a>
-            <a href="#portfolio" class="btn-link">📸 Ver Portfólio & Bastidores</a>
+            <a href="https://www.youtube.com/watch?v=5Hj75ond7VA" target="_blank" class="btn-link btn-primary">🎬 Assista: Vídeo UnBTV 20 Anos</a>
+            <a href="#portfolio" class="btn-link">📸 Ver Portfólio & Bastidores de Set</a>
+            <a href="https://lattes.cnpq.br/1247976809057759" target="_blank" class="btn-link">📝 Currículo Lattes (CNPq)</a>
+            <a href="https://wa.me/5561982003575" target="_blank" class="btn-link" style="color: #25d366; border-color: rgba(37, 211, 102, 0.2);">💬 Iniciar Conversa no WhatsApp</a>
         </div>
 
         <h2>Sobre Mim</h2>
@@ -145,7 +154,7 @@
             <li><strong>Grandes Coberturas Globais:</strong> Integrante da equipe responsável pela captação de imagens durante a COP30 para o Ministério dos Direitos Humanos e da Cidadania.</li>
         </ul>
 
-        <h2 id="portfolio">Trabalhos & Bastidores de Set</h2>
+        <h2 id="portfolio">Portfólio & Bastidores</h2>
         <div class="gallery">
             <div class="gallery-item">
                 <img src="imagens/set1.jpg" alt="Rodrigo no Set">
@@ -161,8 +170,7 @@
             </div>
         </div>
 
-        <!-- CARTÃO DE CONTATO INTEGRADO -->
-        <h2>Contato & Redes</h2>
+        <h2>Contato Institucional</h2>
         <div class="contact-info">
             <div class="contact-item"><strong>E-mail:</strong> <a href="mailto:rodrigogomes@unb.br">rodrigogomes@unb.br</a></div>
             <div class="contact-item"><strong>WeChat:</strong> <span>RodrigogomesUnB</span></div>
