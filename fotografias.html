@@ -1,39 +1,217 @@
-<style>
-    /* Estilo para a Galeria Masonry Fluida */
-    .masonry-gallery {
-        column-count: 3;
-        column-gap: 1.5rem;
-        margin: 0 auto;
-    }
-    .masonry-item {
-        display: inline-block;
-        width: 100%;
-        margin-bottom: 1.5rem;
-        background: #ffffff;
-        padding: 10px;
-        border: 1px solid #e5e5e5;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.03);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .masonry-item:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    }
-    .masonry-item img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>FOTOGRAFIAS | RODRIGO GOMES</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+		<!-- Estilos Exclusivos da Galeria Estilo Pinterest (Masonry) integrados ao padrão -->
+		<style>
+			/* Container da Galeria */
+			.masonry-gallery {
+				column-count: 3;
+				column-gap: 1.5rem;
+				margin: 1.5rem auto 0 auto;
+				width: 100%;
+			}
 
-    /* Responsividade para telas menores */
-    @media screen and (max-width: 980px) {
-        .masonry-gallery {
-            column-count: 2;
-        }
-    }
-    @media screen and (max-width: 480px) {
-        .masonry-gallery {
-            column-count: 1;
-        }
-    }
-</style>
+			/* Bloco de cada foto (simulando moldura/passe-partout de portfólio físico) */
+			.masonry-item {
+				display: inline-block;
+				width: 100%;
+				margin-bottom: 1.5rem;
+				background: #ffffff;
+				padding: 12px;
+				border: 1px solid #e5e5e5;
+				box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+				transition: transform 0.3s ease, box-shadow 0.3s ease;
+				box-sizing: border-box;
+			}
+
+			/* Efeito hover sutil e elegante */
+			.masonry-item:hover {
+				transform: translateY(-4px);
+				box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+			}
+
+			/* Garante que as imagens fiquem nítidas e preencham o bloco */
+			.masonry-item img {
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+
+			/* Legenda discreta abaixo de cada foto */
+			.masonry-meta {
+				margin-top: 0.8rem;
+				font-size: 0.75rem;
+				color: #777;
+				text-align: center;
+				font-style: italic;
+				letter-spacing: 0.02em;
+				line-height: 1.4;
+			}
+
+			/* Responsividade adaptada aos breakpoints nativos do seu template */
+			@media screen and (max-width: 980px) {
+				.masonry-gallery {
+					column-count: 2;
+					column-gap: 1.2rem;
+				}
+				.masonry-item {
+					margin-bottom: 1.2rem;
+					padding: 10px;
+				}
+			}
+
+			@media screen and (max-width: 480px) {
+				.masonry-gallery {
+					column-count: 1;
+					column-gap: 0;
+				}
+				.masonry-item {
+					margin-bottom: 1.5rem;
+					padding: 10px;
+				}
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">RODRIGO GOMES</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Intro</a></li>
+							<li class="active"><a href="fotografias.html">Fotografias</a></li>
+							<li><a href="sobre.html">Sobre</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://instagram.com/rodrigogomesdc" target="_blank" rel="noopener noreferrer" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post que engloba a Galeria -->
+						<section class="post">
+							<header class="major">
+								<span class="date">Acervo</span>
+								<h3>Acervo Fotográfico</h3>
+								<p>Retratos, editoriais de moda e composições geométricas com foco em narrativa visual.</p>
+							</header>
+
+							<!-- Início da Galeria Estilo Pinterest -->
+							<div class="masonry-gallery">
+
+								<!-- Foto 1 (Vertical) -->
+								<div class="masonry-item">
+									<img src="images/moda_01.jpg" alt="Ensaio de Moda" />
+									<div class="masonry-meta">Editorial de Moda — Singapura</div>
+								</div>
+
+								<!-- Foto 2 (Horizontal) -->
+								<div class="masonry-item">
+									<img src="images/moda_02.jpg" alt="Retrato Editorial" />
+									<div class="masonry-meta">Street Style — Xangai, China</div>
+								</div>
+
+								<!-- Foto 3 (Vertical) -->
+								<div class="masonry-item">
+									<img src="images/moda_03.jpg" alt="Fotografia de Moda" />
+									<div class="masonry-meta">Ensaio de Estúdio — Tailândia</div>
+								</div>
+
+								<!-- Foto 4 (Vertical) -->
+								<div class="masonry-item">
+									<img src="images/moda_04.jpg" alt="Produção Audiovisual" />
+									<div class="masonry-meta">Cena de Bastidores — Rússia</div>
+								</div>
+
+								<!-- Foto 5 (Horizontal) -->
+								<div class="masonry-item">
+									<img src="images/moda_05.jpg" alt="Paisagem" />
+									<div class="masonry-meta">Arquitetura Urbana — Brasília, DF</div>
+								</div>
+
+								<!-- Foto 6 (Vertical) -->
+								<div class="masonry-item">
+									<img src="images/moda_06.jpg" alt="Ensaio Conceitual" />
+									<div class="masonry-meta">Projeto Autoral — UnB</div>
+								</div>
+
+							</div>
+							<!-- Fim da Galeria -->
+
+							<!-- Botão de ação integrado para acessar link externo se necessário -->
+							<ul class="actions special" style="margin-top: 3rem;">
+								<li><a href="https://www.rodrigogomes.com/fotografias" target="_blank" rel="noopener noreferrer" class="button small alt">Acessar Acervo Fotográfico Completo</a></li>
+							</ul>
+
+						</section>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section class="contact" style="margin: 0 auto; max-width: 1100px; padding: 2rem 0;">
+						<div class="row aln-center">
+							
+							<!-- Coluna da Esquerda: E-mail -->
+							<div class="col-4 col-12-small" style="display: flex; align-items: center; justify-content: center; border-right: solid 1px rgba(0, 0, 0, 0.1);">
+								<h3 style="margin: 0 0.8rem 0 0;">E-mail</h3>
+								<p style="margin: 0; font-size: 0.85rem;"><a href="mailto:rodrigogomes@unb.br">rodrigogomes@unb.br</a></p>
+							</div>
+
+							<!-- Coluna do Centro: Lattes & Social -->
+							<div class="col-4 col-12-small" style="display: flex; align-items: center; justify-content: center; border-right: solid 1px rgba(0, 0, 0, 0.1);">
+								<h3 style="margin: 0 1rem 0 0;">Social & Lattes</h3>
+								<ul class="icons alt" style="margin: 0;">
+									<li><a href="https://instagram.com/rodrigogomesdc" target="_blank" rel="noopener noreferrer" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="http://lattes.cnpq.br/1247976809057759" target="_blank" rel="noopener noreferrer" class="icon solid alt fa-graduation-cap"><span class="label">Lattes</span></a></li>
+								</ul>
+							</div>
+
+							<!-- Coluna da Direita: Endereço -->
+							<div class="col-4 col-12-small" style="display: flex; align-items: center; justify-content: center;">
+								<h3 style="margin: 0 0.8rem 0 0;">Endereço</h3>
+								<p style="margin: 0; font-size: 0.85rem; color: inherit;">Brasília - DF, Brasil</p>
+							</div>
+
+						</div>
+					</section>
+				</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; rodrigogomes.com</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
