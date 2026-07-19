@@ -12,14 +12,15 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			/* Mantém o player do YouTube responsivo e proporcional em qualquer tela */
+			/* Mantém os players do YouTube responsivos e na proporção 16:9 */
 			.video-container {
 				position: relative;
 				padding-bottom: 56.25%; /* Proporção 16:9 */
 				padding-top: 30px; 
 				height: 0; 
 				overflow: hidden;
-				margin-bottom: 2rem;
+				margin-bottom: 1.5rem;
+				background: #000;
 			}
 			.video-container iframe {
 				position: absolute;
@@ -57,19 +58,18 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Bloco do Showreel Audiovisual -->
+						<!-- Bloco Principal (Destaque): SHOWREEL -->
 						<article class="post featured">
 							<header class="major">
-								<span class="date">Portfólio</span>
-								<h3><a href="#">Showreel Audiovisual</a></h3>
-								<p>Direção de fotografia, câmera e realização audiovisual. Uma compilação de projetos institucionais, documentais e obras cinematográficas.</p>
+								<span class="date">Portfólio / Reel</span>
+								<h2><a href="#">Showreel Audiovisual</a></h2>
+								<p>Uma compilação de trabalhos desenvolvidos como diretor de fotografia, cinegrafista e editor de vídeo. O recorte reúne experiências em produções documentais, institucionais e projetos cinematográficos.</p>
 							</header>
 							
-							<!-- Tela do YouTube Incorporada de forma Responsiva -->
+							<!-- Player do Showreel -->
 							<div class="video-container">
-								<!-- IMPORTANTE: Substitua o ID final '5Hj75ond7VA' pelo ID correto do seu vídeo se for outro -->
 								<iframe 
-									src="https://www.youtube.com/embed/5Hj75ond7VA" 
+									src="https://www.youtube.com/embed/raAGDHWeFJU" 
 									title="Rodrigo Gomes - Showreel" 
 									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
 									allowfullscreen>
@@ -77,9 +77,60 @@
 							</div>
 
 							<ul class="actions special">
-								<li><a href="https://www.youtube.com/watch?v=5Hj75ond7VA" target="_blank" class="button small alt">Assistir no YouTube</a></li>
+								<li><a href="https://youtu.be/raAGDHWeFJU" target="_blank" class="button small alt">Assistir no YouTube</a></li>
 							</ul>
-						</article> 
+						</article>
+
+						<!-- Seção de Projetos / Grade de Vídeos -->
+						<section class="posts">
+							
+							<!-- Projeto 1: UnBTV -->
+							<article>
+								<header>
+									<span class="date">Comunicação Pública & Educativa</span>
+									<h2><a href="#">Vídeo Institucional<br />
+									UnBTV</a></h2>
+								</header>
+								
+								<!-- Player Institucional UnBTV -->
+								<div class="video-container">
+									<iframe 
+										src="https://www.youtube.com/embed/5Hj75ond7VA" 
+										title="Vídeo Institucional UnBTV" 
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+										allowfullscreen>
+									</iframe>
+								</div>
+
+								<p>Atuação técnica e conceitual direta na formulação de produtos da emissora da Universidade de Brasília. A UnBTV integra a Rede Nacional de Comunicação Pública (RNCP) e a Rede Nacional de Consórcios Públicos, produzindo conteúdos focados em divulgação científica, cultura e interesse público.</p>
+								
+								<ul class="actions special">
+									<li><a href="https://www.youtube.com/watch?v=5Hj75ond7VA" target="_blank" class="button Visual">Ver no YouTube</a></li>
+								</ul>
+							</article>
+
+							<!-- Projeto 2: Espaço reservado para o seu próximo vídeo -->
+							<article>
+								<header>
+									<span class="date">Próximo Projeto</span>
+									<h2><a href="#">Espaço para Novo<br />
+									Trabalho</a></h2>
+								</header>
+								
+								<div class="video-container" style="background: #222; display: flex; align-items: center; justify-content: center; padding-bottom: 56.25%; position: relative;">
+									<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #666; font-size: 0.9rem; text-align: center; width: 100%;">
+										[ Insira o iframe do próximo vídeo aqui ]
+									</div>
+								</div>
+
+								<p>Você pode utilizar este bloco duplicando a estrutura do vídeo ao lado para adicionar seus outros projetos (como documentários, curtas ou episódios de séries) conforme seu portfólio crescer.</p>
+								
+								<ul class="actions special">
+									<li><a href="#" class="button disabled">Em breve</a></li>
+								</ul>
+							</article>
+
+						</section>
 
 					</div>
 
